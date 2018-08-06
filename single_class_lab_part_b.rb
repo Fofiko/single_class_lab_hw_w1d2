@@ -41,6 +41,8 @@ class Team
   def update_points(result)
     if result == "win"
       @points += 2
+    elsif result == "tie"
+      @points += 1
     else
       @points
     end
