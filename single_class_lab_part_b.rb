@@ -7,16 +7,23 @@ class Team
   end
 
 
-  def name
+  def get_name
     return @name
   end
 
-  def players
+  def get_players
     return @players
   end
-  
-  def coach
+
+  def get_coach
     return @coach
   end
+
+
+  def set_coach(new_coach)
+    @coach = new_coach
+  end
+
+
 
 end
