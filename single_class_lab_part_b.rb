@@ -33,4 +33,11 @@ class Team
     @players.push(new_player)
   end
 
+  def lookup_player(player_name)
+    return @players.include?(player_name)
+  end
+
+
+
+
 end

@@ -29,7 +29,23 @@ class TeamTest < Minitest::Test
   def test_add_player
     @team.add_player("Janice")
     assert_equal(["Jane", "Joan", "Janice"], @team.get_players)
-
   end
+
+  def test_lookup_player__found
+    found = @team.lookup_player("Joan")
+    assert_equal(true, found)
+  end
+
+  def test_lookup_player__not_found
+    found = @team.lookup_player("Catherine")
+    assert_equal(false, found)
+  end
+
+
+
+
+
+
+
 
 end
