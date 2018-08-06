@@ -1,6 +1,7 @@
 class Team
 
   attr_reader(:name, :players, :coach)
+  attr_writer(:name, :players, :coach)
 
 
 
@@ -28,6 +29,8 @@ class Team
     @coach = new_coach
   end
 
-
+  def add_player(new_player)
+    @players.push(new_player)
+  end
 
 end
