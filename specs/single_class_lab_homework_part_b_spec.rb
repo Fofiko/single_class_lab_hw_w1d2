@@ -41,10 +41,15 @@ class TeamTest < Minitest::Test
     assert_equal(false, found)
   end
 
+  def test_update_points__won
+    new_points = @team.update_points("win")
+    assert_equal(2,new_points)
+  end
 
-
-
-
+  def test_update_points__lost
+    new_points = @team.update_points("loss")
+    assert_equal(0,new_points)
+  end
 
 
 

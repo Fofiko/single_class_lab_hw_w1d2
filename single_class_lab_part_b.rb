@@ -38,7 +38,13 @@ class Team
     return @players.include?(player_name)
   end
 
-
+  def update_points(result)
+    if result == "win"
+      @points += 2
+    else
+      @points
+    end
+  end
 
 
 end
